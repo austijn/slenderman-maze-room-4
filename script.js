@@ -109,8 +109,8 @@ var num2 = 0;
 var num3 = 0;
 var num4 = 0;
 
-const ON = "https://github.com/austijn/slenderman-maze-room-4/images/onButton.png";
-const OFF = "https://github.com/austijn/slenderman-maze-room-4/images/offButton.png";
+const ON = "https://austijn.github.io/slenderman-maze-room-4/images/onButton.png";
+const OFF = "https://austijn.github.io/slenderman-maze-room-4/images/offButton.png";
 
 function checkButtons(code) {
   for (let i = 1; i < 17; i++) {
@@ -597,6 +597,7 @@ function checkSlender() {
 randomCode = genarateNewCode(8);
 randomRoom(difficulty);
 checkRoom();
+
 
 
 
