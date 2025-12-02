@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>slenderman maze</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="">
+    <div class="loadingScreen cc" id="load">
+      <h1 id="h1">LOADING...</h1>
+    </div>
+    <div class="next invisible cc" onclick="buttonClick()" id="next">
+      <h2 id="h2">Next >>></h2>
+    </div>
+    <div class="full2 left dark cc" id="exit">
+      <img src="images/endingWall.png" id="doorimg" />
+    </div>
+    <div class="full dark cc" id="bigGuy">
+      <img src="images/hall.png" id="background" />
+    </div>
+    <div class="breaker invisibleNon cc" id="breaker">
+      <div class="diff cc" id="difficultyBlock">
+        <h4 id="difficultyText">0</h4>
+      </div>
+
+      <div class="breakerBlock">
+        <div class="breakerRow">
+          <div class="breakerText cc">
+            <h5>1</h5>
+          </div>
+          <div class="breakerButton cc">
+            <img
+              src="images/offButton.png"
+              id="button1"
+              class="leftbutton button"
+              onclick="breakerButton(this)"
+            />
+          </div>
+          <div class="breakerButton cc">
+            <img
+              src="images/offButton.png"
+              id="button2"
+              class="rightbutton button"
+              onclick="breakerButton(this)"
+            />
+          </div>
+          <div class="breakerText cc">
+            <h5>2</h5>
+          </div>
+        </div>
+        <div class="breakerRow">
+          <div class="breakerText cc">
+            <h5>3</h5>
+          </div>
+          <div class="breakerButton cc">
+            <img
+              src="images/offButton.png"
+              id="button3"
+              class="leftbutton button"
+              onclick="breakerButton(this)"
+            />
+          </div>
+          <div class="breakerButton cc">
+            <img
+              src="images/offButton.png"
+              id="button4"
+              class="rightbutton button"
+              onclick="breakerButton(this)"
+            />
+          </div>
+          <div class="breakerText cc">
+            <h5>4</h5>
+          </div>
+        </div>
+        <div class="breakerRow">
+          <div class="breakerText cc">
+            <h5>5</h5>
+          </div>
+          <div class="breakerButton cc">
+            <img
+              src="images/offButton.png"
+              id="button5"
+              class="leftbutton button"
+              onclick="breakerButton(this)"
+            />
+          </div>
+          <div class="breakerButton cc">
+            <img
+              src="images/offButton.png"
+              id="button6"
+              class="rightbutton button"
+              onclick="breakerButton(this)"
+            />
+          </div>
+          <div class="breakerText cc">
+            <h5>6</h5>
+          </div>
+        </div>
+        <div class="breakerRow">
+          <div class="breakerText cc">
+            <h5>7</h5>
+          </div>
+          <div class="breakerButton cc">
+            <img
+              src="images/offButton.png"
+              id="button7"
+              class="leftbutton button"
+              onclick="breakerButton(this)"
+            />
+          </div>
+          <div class="breakerButton cc">
+            <img
+              src="images/offButton.png"
+              id="button8"
+              class="rightbutton button"
+              onclick="breakerButton(this)"
+            />
+          </div>
+          <div class="breakerText cc">
+            <h5>8</h5>
+          </div>
+        </div>
+        <div class="breakerRow">
+          <div class="breakerText cc">
+            <h5>9</h5>
+          </div>
+          <div class="breakerButton cc">
+            <img
+              src="images/offButton.png"
+              id="button9"
+              class="leftbutton button"
+              onclick="breakerButton(this)"
+            />
+          </div>
+          <div class="breakerButton cc">
+            <img
+              src="images/offButton.png"
+              id="button10"
+              class="rightbutton button"
+              onclick="breakerButton(this)"
+            />
+          </div>
+          <div class="breakerText cc">
+            <h5>10</h5>
+          </div>
+        </div>
+        <div class="breakerRow">
+          <div class="breakerText cc">
+            <h5>11</h5>
+          </div>
+          <div class="breakerButton cc">
+            <img
+              src="images/offButton.png"
+              id="button11"
+              class="leftbutton button"
+              onclick="breakerButton(this)"
+            />
+          </div>
+          <div class="breakerButton cc">
+            <img
+              src="images/offButton.png"
+              id="button12"
+              class="rightbutton button"
+              onclick="breakerButton(this)"
+            />
+          </div>
+          <div class="breakerText cc">
+            <h5>12</h5>
+          </div>
+        </div>
+        <div class="breakerRow">
+          <div class="breakerText cc">
+            <h5>13</h5>
+          </div>
+          <div class="breakerButton cc">
+            <img
+              src="images/offButton.png"
+              id="button13"
+              class="leftbutton button"
+              onclick="breakerButton(this)"
+            />
+          </div>
+          <div class="breakerButton cc">
+            <img
+              src="images/offButton.png"
+              id="button14"
+              class="rightbutton button"
+              onclick="breakerButton(this)"
+            />
+          </div>
+          <div class="breakerText cc">
+            <h5>14</h5>
+          </div>
+        </div>
+        <div class="breakerRow">
+          <div class="breakerText cc">
+            <h5>15</h5>
+          </div>
+          <div class="breakerButton cc">
+            <img
+              src="images/offButton.png"
+              id="button15"
+              class="leftbutton button"
+              onclick="breakerButton(this)"
+            />
+          </div>
+          <div class="breakerButton cc">
+            <img
+              src="images/offButton.png"
+              id="button16"
+              class="rightbutton button"
+              onclick="breakerButton(this)"
+            />
+          </div>
+          <div class="breakerText cc">
+            <h5>16</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sign">
+      <div class="signImg invisibleNon cc" id="sign">
+        <img src="images/sign.png" id="" />
+      </div>
+    </div>
+    <div class="singleSymbol invisibleNon" id="singleSymbol">
+      <div class="smallSymbol cc">
+        <img src="images/symbols/square.png" id="smallSymbol" />
+      </div>
+    </div>
+    <div class="doubleSymbol invisibleNon" id="doubleSymbol">
+      <div class="bigSymbol">
+        <div class="halfSymbol cc">
+          <img src="images/symbols/circle.png" id="halfSymbol1" />
+        </div>
+        <div class="halfSymbol cc">
+          <img src="images/symbols/square.png" id="halfSymbol2" />
+        </div>
+      </div>
+    </div>
+    <div class="flashlight cc">
+      <img src="images/flashlight.png" class="" id="hand" />
+    </div>
+    <div class="baldiJump cc" id="baldiJump">
+      <img src="images/baldiJump.png" />
+    </div>
+    <div class="timer" id="timerDiv">
+      <h6 id="timerText">38</h6>
+    </div>
+    <div class="slendermanJumpscare cc" id="slendermanJumpscare">
+      <img src="images/slendermanJumpscare.gif" />
+    </div>
+    <div class="static cc translucent staticIndexOG" id="static">
+      <img src="images/static.gif" />
+    </div>
+    <div class="vignette cc">
+      <img src="images/vignette.png" id="vignette" />
+    </div>
+    <div class="redVignette invisible cc" id="redVingette">
+      <img src="images/redVingette.png" />
+    </div>
+    <div class="black invisible" id="black"></div>
+    <div class="black2" id="black2"></div>
+    <div class="slenderman dark invisibleNon cc" id="slenderman">
+      <img src="images/slenderman.png" id="slenderImg" />
+    </div>
+
+    <div class="compass cc">
+      <img src="images/compassForward.png" id="compass" />
+    </div>
+    <div class="battery" id="batteryBlock">
+      <div class="batteryBlock cc">
+        <img src="images/battery.png" />
+      </div>
+      <div class="batteryBlock cc">
+        <h2 id="battery">100%</h2>
+      </div>
+    </div>
+    <div class="downarrow cc">
+      <img
+        src="images/downarrow.png"
+        class="downarrowimg clickable"
+        id="downarrow"
+        onclick="downButton()"
+      />
+    </div>
+    <div class="leftarrow cc">
+      <img
+        src="images/leftarrow.png"
+        class="arrowimg clickable"
+        id="leftarrow"
+        onclick="leftButton()"
+      />
+    </div>
+    <div class="rightarrow cc">
+      <img
+        src="images/rightarrow.png"
+        class="arrowimg clickable"
+        id="rightarrow"
+        onclick="rightButton()"
+      />
+    </div>
+
+    <div class="dialogue" id="dialogueModal">
+      <div class="dialogueFace">
+        <img
+          id="dialogueImg"
+          src="images/DialogueBox.png"
+          class="dialogueImg"
+        />
+      </div>
+      <div class="dialogueText">
+        <img src="images/DialogueBox.png" class="dialogueImg" />
+        <h3 id="dialogueText">hi</h3>
+      </div>
+    </div>
+
+    <script src="preload.js"></script>
+    <script src="script.js"></script>
+
+    <audio src="sounds/LivingInTheSunlight.mp3" id="sponge"></audio>
+    <audio src="sounds/draw_shovel_soldier.wav" id="equip"></audio>
+    <audio src="sounds/mvm_siren.mp3" id="siren"></audio>
+    <audio src="sounds/Button click sound  sound effect.mp3" id="click"></audio>
+    <audio src="sounds/Half-Life - Button Sound.mp3" id="correct"></audio>
+    <audio src="sounds/slenderman sound effect.mp3" id="slenderSound"></audio>
+    <audio src="sounds/desert_wind.wav" id="wind"></audio>
+    <audio src="sounds/underground.wav" id="amb"></audio>
+    <audio src="sounds/weapon_crit_charged_off.wav" id="shock"></audio>
+    <audio src="sounds/slendermanDeath.wav" id="slendermanDeath"></audio>
+    <audio src="sounds/Baldi smacking ruler.mp3" id="baldi"></audio>
+    <audio src="sounds/baldiSound.mp3" id="baldiSound"></audio>
+    <audio src="sounds/doorOpen.mp3" id="door"></audio>
+  </body>
+</html>

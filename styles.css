@@ -1,0 +1,566 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  display: block;
+  background-color: black;
+  margin: 0;
+  overflow: hidden;
+}
+h1 {
+  font-family: Arial, system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color: white;
+  font-size: 3em;
+}
+h2 {
+  font-family: Arial, system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color: white;
+  font-size: 2em;
+}
+
+h4 {
+  font-family: Arial, system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color: red;
+  font-size: 100%;
+}
+
+h5 {
+  font-family: Arial, system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color: black;
+  font-size: 100%;
+}
+
+h6 {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color: red;
+  font-size: 8em;
+}
+
+.timer {
+  display: none;
+  position: fixed;
+  width: 25%;
+  height: 30%;
+  top: 0%;
+  left: 35%;
+  z-index: 23;
+  justify-content: center;
+  align-items: center;
+}
+
+.text:hover {
+  cursor: pointer;
+}
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.hugeimg {
+  max-height: 1000%;
+  max-width: 1000%;
+  height: 1000%;
+  width: 1000%;
+  transition: max-height 1s ease, max-width 1s ease, height 1s ease, width 1s ease;
+}
+
+.next {
+  display: flex;
+  position: fixed;
+  top: 70%;
+  left: 40%;
+  z-index: 101;
+  width: 20%;
+  height: 10%;
+  color: white;
+}
+
+.sign {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  aspect-ratio: 16 / 9;
+  width: 100vw;
+  height: auto;
+  max-height: 100vh;
+  max-width: calc(100vh * (16 / 9));
+  z-index: 2;
+}
+
+.signImg {
+  position: relative;
+  height: 38%;
+  width: 20%;
+  top: 40%;
+  left: 39.5%;
+}
+
+.singleSymbol {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  aspect-ratio: 16 / 9;
+  width: 100vw;
+  height: auto;
+  max-height: 100vh;
+  max-width: calc(100vh * (16 / 9));
+  z-index: 3;
+}
+
+.smallSymbol {
+  position: relative;
+  height: 8%;
+  width: 8%;
+  top: 49%;
+  left: 45.5%;
+}
+
+.doubleSymbol {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  aspect-ratio: 16 / 9;
+  width: 100vw;
+  height: auto;
+  max-height: 100vh;
+  max-width: calc(100vh * (16 / 9));
+  z-index: 3;
+}
+
+.bigSymbol {
+  display: flex;
+  position: relative;
+  height: 8%;
+  width: 13%;
+  top: 49%;
+  left: 43%;
+}
+
+.halfSymbol {
+  position: relative;
+  height: 100%;
+  width: 50%;
+}
+
+.breaker {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  aspect-ratio: 16 / 9;
+  width: 50vw;
+  height: auto;
+  max-height: 50vh;
+  max-width: calc(50vh * (16 / 9));
+}
+
+.breakerIndex {
+  z-index: 10;
+}
+
+.staticIndex {
+  z-index: 21;
+}
+
+.staticIndexOG {
+  z-index: 6;
+}
+
+.diff {
+  position: relative;
+  width: 20%;
+  height: 8%;
+  left: -13.5%;
+  top: -47%;
+  background-color: black;
+}
+
+.breakerBlock {
+  position: relative;
+  display: block;
+  width: 23%;
+  height: 48%;
+  left: -35.2%;
+}
+
+.breakerRow {
+  display: flex;
+  width: 100%;
+  height: calc(100% / 7.75);
+}
+
+.breakerButton {
+  width: 35%;
+  height: 100%;
+}
+
+.breakerText {
+  position: relative;
+  width: 15%;
+  height: 100%;
+  top: -15%;
+}
+
+.leftbutton {
+  position: relative;
+  left: -6%;
+  top: -20%;
+}
+
+.leftbutton:hover {
+  cursor: pointer;
+}
+
+.rightbutton {
+  position: relative;
+  left: 6%;
+  top: -20%;
+}
+
+.rightbutton:hover {
+  cursor: pointer;
+}
+
+.faded {
+  filter: translate(brightness(40%));
+  transition: filter 0.5s ease;
+}
+
+.dark {
+  filter: brightness(40%);
+}
+.cc {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.full {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0%;
+  left: 0%;
+}
+
+.bruhhh {
+  left: 100%;
+  transition: left 0.5s ease;
+}
+
+.bruhhh2 {
+  left: 200%;
+  transition: left 0.5s ease;
+}
+
+
+.full2 {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+}
+
+.left {
+  left: -100%;
+}
+
+.endingExit {
+  position: relative;
+  left: 0%;
+  transition: left 0.5s ease;
+}
+
+.flashlight {
+  display: flex;
+  position: fixed;
+  top: 0%;
+  left: -1%;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+}
+
+.static {
+  display: flex;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+.slendermanJumpscare {
+  display: none;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: 22;
+}
+
+.baldiJump {
+  display: none;
+  position: fixed;
+  top: -25%;
+  left: -25%;
+  width: 150%;
+  height: 150%;
+  z-index: 22;
+}
+
+.vignette {
+  display: flex;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+}
+
+.redVignette {
+  display: flex;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  z-index: 6;
+  width: 100%;
+  height: 100%;
+}
+
+.slenderman {
+  display: flex;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.leftarrow {
+  display: flex;
+  position: fixed;
+  top: 30%;
+  left: -40%;
+  z-index: 9;
+  width: 100%;
+  height: 40%;
+}
+
+.rightarrow {
+  display: flex;
+  position: fixed;
+  top: 30%;
+  left: 40%;
+  z-index: 9;
+  width: 100%;
+  height: 40%;
+}
+
+.downarrow {
+  display: flex;
+  position: fixed;
+  top: 70%;
+  left: 0%;
+  z-index: 9;
+  width: 100%;
+  height: 15%;
+}
+
+.arrowimg {
+  opacity: 0.3;
+}
+
+.downarrowimg {
+  opacity: 0.3;
+}
+
+.clickable:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.translucent {
+  opacity: 0.01;
+}
+
+.black {
+  display: flex;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  z-index: 8;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+.black2 {
+  display: none;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+.loadingScreen {
+  display: flex;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+.invisible {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.invisibleNon {
+  opacity: 0;
+}
+
+.visible {
+  opacity: translate(1);
+  transition: opacity 0.5s ease;
+}
+
+.visibleNon {
+  opacity: 1;
+}
+
+.staticGrow {
+  opacity: 1;
+  transition: opacity 3s;
+}
+
+.up {
+  transform: translate(0, 0%);
+  transition: transform 0.5s ease;
+}
+
+.down {
+  transform: translate(0, 100%);
+  transition: transform 0.5s ease;
+}
+
+.compass {
+  display: flex;
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  z-index: 9;
+  width: 15%;
+  height: 15%;
+  opacity: 0.3;
+}
+
+.battery {
+  display: flex;
+  position: fixed;
+  top: 8%;
+  left: 75%;
+  z-index: 8;
+  width: 10%;
+  height: 15%;
+  opacity: 0.3;
+}
+
+.batteryBlock {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+
+.dialogue {
+  position: fixed;
+  display: none;
+  width: 40%;
+  height: 20%;
+  top: 65%;
+  left: 30%;
+  z-index: 1;
+}
+
+.dialogueFace {
+  position: relative;
+  width: 25%;
+  height: 100%;
+}
+
+.dialogueText {
+  position: relative;
+  width: 75%;
+  height: 100%;
+}
+
+.dialogueImg {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.dialogueText h3 {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  font-family: Arial, system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  color: white;
+  font-size: 2em;
+  margin: 0;
+}
+
+.green {
+  filter: hue-rotate(90deg);
+}
+
+.saturate1 {
+  filter: saturate(150%);
+  transition: filter 0.5s ease;
+}
+
+.saturate2 {
+  filter: saturate(200%);
+  transition: filter 0.5s ease;
+}
+
+.saturate3 {
+  filter: saturate(250%);
+  transition: filter 0.5s ease;
+}
+
+.saturate4 {
+  filter: saturate(25000%);
+  transition: filter 10s ease;
+}
