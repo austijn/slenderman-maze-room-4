@@ -109,8 +109,8 @@ var num2 = 0;
 var num3 = 0;
 var num4 = 0;
 
-const ON = "https://zq6fvr.csb.app/images/onButton.png";
-const OFF = "https://zq6fvr.csb.app/images/offButton.png";
+const ON = "https://austijn.github.io/slenderman-maze-room-4/images/onButton.png";
+const OFF = "https://austijn.github.io/slenderman-maze-room-4/images/offButton.png";
 
 function checkButtons(code) {
   for (let i = 1; i < 17; i++) {
@@ -429,7 +429,7 @@ function breakerButton(e) {
     document.getElementById("click").currentTime = 0;
     document.getElementById("click").play();
 
-    if (e.src == "https://zq6fvr.csb.app/images/onButton.png") {
+    if (e.src == "https://austijn.github.io/slenderman-maze-room-4/images/onButton.png") {
       e.src = "images/offButton.png";
       e.classList.remove("green");
     } else {
@@ -595,3 +595,4 @@ function checkSlender() {
 randomCode = genarateNewCode(8);
 randomRoom(difficulty);
 checkRoom();
+
