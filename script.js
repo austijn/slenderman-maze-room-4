@@ -429,9 +429,7 @@ function breakerButton(e) {
     document.getElementById("click").currentTime = 0;
     document.getElementById("click").play();
 
-    console.log(e.src);
-
-    if (e.src == ON) {
+    if (e.src == "https://austijn.github.io/slenderman-maze-room-4/images/offButton.png") {
       e.src = "images/offButton.png";
       e.classList.remove("green");
     } else {
@@ -597,6 +595,7 @@ function checkSlender() {
 randomCode = genarateNewCode(8);
 randomRoom(difficulty);
 checkRoom();
+
 
 
 
