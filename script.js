@@ -42,6 +42,7 @@ function ending() {
   document.getElementById("rightarrow").remove();
   document.getElementById("downarrow").remove();
   compass.remove();
+  document.getElementById("timerText").remove();
   document.getElementById("batteryBlock").remove();
   setTimeout(function () {
     document.getElementById("door").play();
@@ -595,6 +596,7 @@ function checkSlender() {
 randomCode = genarateNewCode(8);
 randomRoom(difficulty);
 checkRoom();
+
 
 
 
