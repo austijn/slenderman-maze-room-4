@@ -561,6 +561,6 @@ img {
 }
 
 .saturate4 {
-  filter: saturate(25000%);
+  filter: saturate(10000%);
   transition: filter 10s ease;
 }
