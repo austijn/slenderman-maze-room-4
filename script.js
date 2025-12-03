@@ -182,7 +182,7 @@ function randomRoom(difficulty) {
     smallSymbol.src = "images/symbols/" + currentSymbol + ".png";
   }
 
-  if (difficulty < 4) {
+  if (difficulty < 3) {
     if (currentSymbolPosition >= 2 && currentSymbolPosition < 4) {
       rando = genarateRandomNumber(2);
       if (signPosition == 1) {
@@ -269,7 +269,7 @@ function handUp() {
 function checkRoom() {
   if (currentSymbolPosition >= 8 && currentRoom != "Backward") {
     slendermanVisible = genarateRandomNumber(2);
-    if (slendermanVisible == 1 && difficulty < 4) {
+    if (slendermanVisible == 1 && difficulty < 3) {
       static.classList.remove("staticGrow");
       static.classList.add("translucent");
       slendermanPosition = currentRoom;
@@ -277,7 +277,7 @@ function checkRoom() {
   }
 
   if (currentRoom == slendermanPosition) {
-    if (difficulty < 4) {
+    if (difficulty < 3) {
       document.getElementById("slenderSound").pause();
       document.getElementById("slenderSound").currentTime = 0;
       document.getElementById("slenderSound").play();
@@ -480,7 +480,7 @@ function breakerButton(e) {
       document.getElementById("siren").pause();
       document.getElementById("siren").currentTime = 0;
       document.getElementById("siren").play();
-      if (difficulty == 4) {
+      if (difficulty == 3) {
         document.getElementById("wind").pause();
         document.getElementById("amb").pause();
         slenderImg.src = "images/baldi.png";
@@ -495,7 +495,7 @@ function breakerButton(e) {
           document.getElementById("timerText").textContent = String(timer);
         }, 500);
       }
-      if (difficulty == 5) {
+      if (difficulty == 4) {
         ending();
       }
       difficultyText.textContent = String(difficulty);
@@ -596,6 +596,7 @@ function checkSlender() {
 randomCode = genarateNewCode(8);
 randomRoom(difficulty);
 checkRoom();
+
 
 
 
