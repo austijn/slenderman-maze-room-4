@@ -17,14 +17,6 @@ function preload() {
 function buttonClick() {
   if (canClick2 == true) {
     if (h1.textContent == "LOADING...") {
-      h1.textContent = "Click arrows to move.";
-    } else if (h1.textContent == "Click arrows to move.") {
-      h1.textContent = "Plug in any symbols you find.";
-    } else if (h1.textContent == "Plug in any symbols you find.") {
-      h1.textContent = "Avoid looking the wrong way.";
-    } else if (h1.textContent == "Avoid looking the wrong way.") {
-      h1.textContent = "Good luck.";
-    } else if (h1.textContent == "Good luck.") {
       canClick2 = false;
       next.classList.remove("visible");
       next.classList.add("invisible");
@@ -106,3 +98,4 @@ setTimeout(function () {
     }, 500);
   }, 500);
 }, 1000);
+
