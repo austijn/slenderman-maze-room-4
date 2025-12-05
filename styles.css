@@ -5,6 +5,7 @@ body {
   background-color: black;
   margin: 0;
   overflow: hidden;
+  user-select: none;
 }
 h1 {
   font-family: Arial, system-ui;
