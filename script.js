@@ -57,7 +57,7 @@ function ending() {
   }, 4000);
 }
 
-var timer = 38;
+var timer = 60;
 
 function countdown() {
   if (iambaldi) {
@@ -596,6 +596,7 @@ function checkSlender() {
 randomCode = genarateNewCode(8);
 randomRoom(difficulty);
 checkRoom();
+
 
 
 
