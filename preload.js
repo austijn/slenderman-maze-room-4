@@ -31,7 +31,7 @@ function buttonClick() {
         document.getElementById("wind").play();
         document.getElementById("amb").play();
         setInterval(drainBattery, 5000);
-        setInterval(checkSlender, 150);
+        setInterval(checkSlender, 500);
         setInterval(countdown, 10);
       }, 500);
     }
@@ -98,4 +98,5 @@ setTimeout(function () {
     }, 500);
   }, 500);
 }, 1000);
+
 
