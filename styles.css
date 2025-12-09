@@ -558,5 +558,5 @@ img {
 
 .saturate3 {
   filter: saturate(1000%);
-  transition: filter 10s ease;
+  transition: filter 2s ease;
 }
