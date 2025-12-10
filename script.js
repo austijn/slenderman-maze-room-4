@@ -50,10 +50,10 @@ function ending() {
   }, 2000);
   setTimeout(function () {
     document.getElementById("doorimg").classList.add("hugeimg");
-    window.location.href = "https://twkzfg.csb.app/";
+    window.location.href = "https://ihatethathedgehog3.github.io/EscapeRoom5/";
   }, 3000);
   setTimeout(function () {
-    window.location.href = "https://twkzfg.csb.app/";
+    window.location.href = "https://ihatethathedgehog3.github.io/EscapeRoom5/";
   }, 4000);
 }
 
@@ -596,6 +596,7 @@ function checkSlender() {
 randomCode = genarateNewCode(8);
 randomRoom(difficulty);
 checkRoom();
+
 
 
 
